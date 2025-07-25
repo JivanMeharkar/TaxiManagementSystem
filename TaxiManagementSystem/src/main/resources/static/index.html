@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Available Drivers</h1>
+        <ul id="drivers-list"></ul>
+    </div>
+    
+    <div>
+        <h1>Create a Booking</h1>
+        <form id="booking-form">
+            <label for="pickup">Pickup Location</label>
+            <input type="text" id="pickup" required>
+            
+            <label for="dropoff">Dropoff Location</label>
+            <input type="text" id="dropoff" required>
+            
+            <button type="submit">Create Booking</button>
+        </form>
+    </div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <script src="app.js"></script>
+     <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</body>
+</html>
